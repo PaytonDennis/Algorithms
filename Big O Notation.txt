@@ -1,0 +1,5 @@
+No loop = O(1)
+One loop = O(n)
+Nested Loops = O(n^2)
+Hash Map or get/set = O(1)
+sorting O(n log n)
