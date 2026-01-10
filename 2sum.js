@@ -93,7 +93,7 @@ function twoSumHash(nums, target){
     for(let i = 0; i < nums.length; i++ ){
          let complement = target - nums[i]
          if (map.has(complement)){
-            return [map.get(complement),i]
+            return ([map.get(complement),i])
          }
     }
     map.set[nums[i], i]
@@ -110,3 +110,91 @@ function twoSum(nums, target){
         map.set(nums[i], i)
     }
 }
+
+function twoSum(nums, target){
+    let map = new Map()
+    for(let i = 0; i < nums.length; i++){
+        let complement = target - nums[i]
+        if (map.has(complement)){
+            return ([map.get(complement),i])
+        }
+        map.set(nums[i],i)
+    }
+}
+
+function twoSum(nums, target){
+    let map = new Map()
+    for(let i = 0; i < nums.length; i++){
+        let compliment =  target - nums[i]
+        if (map.has(compliment)){
+            return [map.get(compliment), i]
+        }
+        map.set(nums[i],i)
+    }
+}
+
+function twoSum(nums, target){
+    let map = new Map()
+    for (let i = 0; i < nums.length; i++){
+        let complement = target - nums[i]
+        if (map.has(complement)){
+            return [map.get(complement),i]
+        }
+        map.set(nums[i],i)
+    }
+}
+
+function twoSum(nums, target){
+    let map = new Map()
+    for (let i = 0; i < nums.length; i++){
+        let complement = target - nums[i]
+        if (map.has(complement)){
+            return [map.get(complement),i]
+        }
+        map.set(nums[i],i)
+    }
+}
+// [2,4,6] target = 6
+function twoSum(nums, target){
+    let map = new Map()
+    for (let i = 0; i < nums.length; i++){
+        let complement = target - nums[i]
+        if (map.has(complement)){
+            return [map.get(complement),i]
+        }
+        map.set(nums[i],i)
+    }
+}
+
+function twoSum(nums, target){
+    let map = new Map()
+    for (let i = 0; i < nums.length; i++){
+        let complement = target - nums[i]
+        if (map.has(complement)){
+            return [map.get(complement),i]
+        }
+        map.set(nums[i],i)
+    }
+}
+
+function twoSum(nums, target){
+   for (let i = 0; i < nums.length; i++){
+        for(let j = i + 1; j < nums.length; j++){
+            if(nums[i] + nums[j] == target){
+                return [i,j]
+
+            }
+        }
+   }
+}
+
+// my expllinations:
+// So we need to create a function that takes the numbs array and
+//  then the target number as parameters then we create a map that
+//   will hold our data for us and then we create a line of code that 
+// Maps the current number in the array and it's index to the map then
+//  we create a for Loop that Loops through the entire array and then we
+// create a compliment which will stand for the number we're looking for
+//  we make the compliment equal to the target number we're looking for minus
+// Dot I which is the current number we are at then we do an if statement
+//where if dumbs Dot baps dot has compliment then we will return map.get com's eye,
